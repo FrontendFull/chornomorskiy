@@ -67,6 +67,20 @@ window.onload = function () {
     //     })
     // }
 
+    document.addEventListener('click', function (e) {
+        console.log(e.target);
+        if (e.target.classList.contains('fqa_js')) {
+            if (e.target.parentElement.classList.contains('active')) {
+                e.target.parentElement.classList.remove('active');
+                e.target.nextElementSibling.style.maxHeight = 0;
+            } else {
+                e.target.parentElement.classList.add('active');
+                e.target.nextElementSibling.style.maxHeight = e.target.nextElementSibling.scrollHeight + 'px';
+
+            }
+        }
+    });
+
     MenuScrollAnchors('.anchor', '.menu_link')
 
 }

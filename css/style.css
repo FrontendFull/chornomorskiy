@@ -854,6 +854,7 @@ a.button:hover {
 .section_fqa .item {
   width: 100%;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 .section_fqa .item .title {
   padding: 30px 60px 30px 35px;

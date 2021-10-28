@@ -1,50 +1,5 @@
 window.onload = function () {
 
-    // for (const item of document.querySelectorAll('.btn-toggle')) {
-
-    //     item.addEventListener('click', function () {
-    //         let container = this.closest('.row').querySelector('.answer');
-
-    //         if (container.classList.contains('active')) {
-    //             container.classList.remove('active');
-    //             this.classList.remove('active');
-    //             container.style.maxHeight = 0;
-    //         } else {
-    //             container.classList.add('active');
-    //             this.classList.add('active');
-    //             container.style.maxHeight = container.scrollHeight + 'px';
-    //         }
-
-    //     })
-    // }
-
-    document.addEventListener('click', function (e) {
-        console.log(e.target);
-        if (e.target.classList.contains('fqa_js')) {
-            if (e.target.parentElement.classList.contains('active')) {
-                e.target.parentElement.classList.remove('active');
-                e.target.nextElementSibling.style.maxHeight = 0;
-            } else {
-                e.target.parentElement.classList.add('active');
-                e.target.nextElementSibling.style.maxHeight = e.target.nextElementSibling.scrollHeight + 'px';
-
-            }
-        }
-
-        if (!e.target.classList.contains('fqa_js')) {
-            console.log(1);
-            for (const item of this.querySelectorAll('.fqa_js')) {
-                if (item.parentElement.classList.contains('active')) {
-                    item.parentElement.classList.remove('active');
-                    item.nextElementSibling.style.maxHeight = 0;
-                }
-            }
-        }
-
-    });
-
-
-
 
     // document.querySelector('.btn-close').addEventListener('click', function () {
     //     this.closest('.menu_mobile').classList.remove('active');
@@ -94,6 +49,37 @@ window.onload = function () {
     //     })
     // }
 
+    // for (const item of document.querySelectorAll('.btn-toggle')) {
+
+    //     item.addEventListener('click', function () {
+    //         let container = this.closest('.row').querySelector('.answer');
+
+    //         if (container.classList.contains('active')) {
+    //             container.classList.remove('active');
+    //             this.classList.remove('active');
+    //             container.style.maxHeight = 0;
+    //         } else {
+    //             container.classList.add('active');
+    //             this.classList.add('active');
+    //             container.style.maxHeight = container.scrollHeight + 'px';
+    //         }
+
+    //     })
+    // }
+
+    document.addEventListener('click', function (e) {
+        console.log(e.target);
+        if (e.target.classList.contains('fqa_js')) {
+            if (e.target.parentElement.classList.contains('active')) {
+                e.target.parentElement.classList.remove('active');
+                e.target.nextElementSibling.style.maxHeight = 0;
+            } else {
+                e.target.parentElement.classList.add('active');
+                e.target.nextElementSibling.style.maxHeight = e.target.nextElementSibling.scrollHeight + 'px';
+
+            }
+        }
+    });
 
     MenuScrollAnchors('.anchor', '.menu_link')
 
