@@ -1,0 +1,24 @@
+input{
+  width: 100%;
+  padding: 21px 50px;
+  background-color: #ffffff;
+  font-size: 18px;
+  color: $text-color;
+  border-radius: 45px;
+  border: 1px solid transparent;
+  transition: 0.4s;
+  &:focus{
+    box-shadow: 10px 15px 57px -7px rgba(251, 227, 68, 0.4);
+    &::placeholder{
+      opacity: 0;
+    }
+  }
+  &::placeholder{
+    color: #D0D0D0;
+    font-size: inherit;
+    transition: inherit;
+  }
+  &.error{
+    border: 1px solid #ff0000;
+  }
+}
