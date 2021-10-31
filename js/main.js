@@ -1,5 +1,14 @@
 window.onload = function () {
 
+    var swiper = new Swiper(".teamSwiper", {
+        slidesPerView: 6,
+        spaceBetween: 30,
+        speed: 800,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
 
     // document.querySelector('.btn-close').addEventListener('click', function () {
     //     this.closest('.menu_mobile').classList.remove('active');

@@ -23,20 +23,25 @@ body {
 
 .ai-c {
   align-items: center;
+  @extend .flexbox
 }
 .ai-s {
   align-items: flex-start;
+  @extend .flexbox
 }
 .ai-e {
   align-items: flex-end;
+  @extend .flexbox
 }
 
 .jc-c {
   justify-content: center;
+  @extend .flexbox
 }
 
 .jc-sb {
   justify-content: space-between;
+  @extend .flexbox
 }
 
 .none {

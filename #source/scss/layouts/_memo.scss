@@ -1,0 +1,20 @@
+.section_memo {
+  padding-bottom: 115px;
+  margin-bottom: 75px;
+  background-color: #0c9748;
+  .title_block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h2,.h2{
+      text-align: left;
+      margin-bottom: 0;
+      margin-right: 30px;
+    }
+    .button{
+      padding-left: 40px;
+      padding-right: 40px;
+     white-space: nowrap;
+    }
+  }
+}
