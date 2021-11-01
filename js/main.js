@@ -28,20 +28,20 @@ window.onload = function () {
     //     })
     // }
 
-    // for (const item of document.querySelectorAll('.video_block')) {
+    for (const item of document.querySelectorAll('.video_btn')) {
 
-    //     item.addEventListener('click', function (e) {
-    //         e.preventDefault();
-    //         Fancybox.show(
-    //             [
-    //                 {
-    //                     src: this.getAttribute("href"),
-    //                     type: "iframe",
-    //                 },
-    //             ],
-    //         );
-    //     })
-    // }
+        item.addEventListener('click', function (e) {
+            e.preventDefault();
+            Fancybox.show(
+                [
+                    {
+                        src: this.getAttribute("href"),
+                        type: "iframe",
+                    },
+                ],
+            );
+        })
+    }
 
     // for (const item of document.querySelectorAll('a.modal')) {
 
