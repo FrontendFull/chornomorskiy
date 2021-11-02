@@ -687,6 +687,150 @@ input.error {
   transform: translate(-40%, -50%);
 }
 
+.section_benefits {
+  padding-bottom: 115px;
+  margin-bottom: 75px;
+}
+.section_benefits .wrap {
+  height: 850px;
+  position: relative;
+}
+.section_benefits .wrap:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url("../img/benefits.png");
+  max-width: 800px;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.section_benefits .wrap .item {
+  position: absolute;
+  width: 325px;
+}
+.section_benefits .wrap .item:after {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 8px;
+  width: 115%;
+  content: "";
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.section_benefits .wrap .item .text {
+  font-weight: 500;
+  font-size: 21px;
+  color: #0E2F3E;
+}
+.section_benefits .wrap .item_1 {
+  top: 8%;
+  right: 50%;
+  text-align: left;
+}
+.section_benefits .wrap .item_1:after {
+  background-image: url("../img/svg/benefits_1.svg");
+}
+.section_benefits .wrap .item_2 {
+  top: 24%;
+  right: 62%;
+}
+.section_benefits .wrap .item_2:after {
+  background-image: url("../img/svg/benefits_2.svg");
+}
+.section_benefits .wrap .item_3 {
+  top: 37%;
+  right: 55%;
+}
+.section_benefits .wrap .item_3:after {
+  background-image: url("../img/svg/benefits_3.svg");
+}
+.section_benefits .wrap .item_4 {
+  top: 51%;
+  right: 72%;
+}
+.section_benefits .wrap .item_4:after {
+  background-image: url("../img/svg/benefits_4.svg");
+}
+.section_benefits .wrap .item_5 {
+  width: 335px;
+  top: 68%;
+  right: 68%;
+}
+.section_benefits .wrap .item_5:after {
+  background-image: url("../img/svg/benefits_5.svg");
+}
+.section_benefits .wrap .item_6 {
+  top: 82%;
+  right: 68%;
+}
+.section_benefits .wrap .item_6:after {
+  background-image: url("../img/svg/benefits_6.svg");
+}
+.section_benefits .wrap .item_7 {
+  top: 8%;
+  text-align: right;
+  left: 55%;
+}
+.section_benefits .wrap .item_7:after {
+  background-image: url("../img/svg/benefits_7.svg");
+}
+.section_benefits .wrap .item_8 {
+  width: 340px;
+  top: 20%;
+  left: 65%;
+}
+.section_benefits .wrap .item_8:after {
+  background-image: url("../img/svg/benefits_8.svg");
+}
+.section_benefits .wrap .item_9 {
+  top: 38%;
+  left: 60%;
+}
+.section_benefits .wrap .item_9:after {
+  background-image: url("../img/svg/benefits_9.svg");
+}
+.section_benefits .wrap .item_10 {
+  top: 50%;
+  left: 70%;
+  text-align: right;
+}
+.section_benefits .wrap .item_10:after {
+  background-image: url("../img/svg/benefits_10.svg");
+}
+.section_benefits .wrap .item_11 {
+  top: 64%;
+  left: 75%;
+  text-align: center;
+}
+.section_benefits .wrap .item_11:after {
+  background-image: url("../img/svg/benefits_11.svg");
+}
+.section_benefits .wrap .item_12 {
+  top: 80%;
+  left: 67%;
+  text-align: center;
+}
+.section_benefits .wrap .item_12:after {
+  background-image: url("../img/svg/benefits_12.svg");
+}
+.section_benefits .wrap .item_13 {
+  width: 570px;
+  top: 92%;
+  left: 50%;
+}
+.section_benefits .wrap .item_13:after {
+  background-image: url("../img/svg/benefits_13.svg");
+  height: 12px;
+}
+
 .section_time {
   padding-bottom: 115px;
   margin-bottom: 75px;
