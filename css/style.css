@@ -1070,8 +1070,8 @@ input[type=checkbox]:checked + span:before {
 }
 
 .section_form {
-  background-image: url("/img/svg/team.svg");
-  background-image: url("/img/svg/team.svg");
+  background-image: url("../img/svg/team.svg");
+  background-image: url("../img/svg/team.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
@@ -1829,6 +1829,17 @@ input[type=checkbox]:checked + span:before {
 .footer .row {
   display: flex;
 }
+@media (max-width: 767px) {
+  .footer .row {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 767px) {
+  .footer .row .logo_wrap {
+    margin-bottom: 30px;
+  }
+}
 .footer .row .logo_wrap .logo {
   display: block;
   width: 160px;
@@ -1844,19 +1855,78 @@ input[type=checkbox]:checked + span:before {
   flex: 1 1 auto;
   margin: 0 70px;
 }
+@media (max-width: 1024px) {
+  .footer .row .form_wrap {
+    margin: 0 20px;
+  }
+}
+@media (hover: none) and (pointer: coarse) {
+  .footer .row .form_wrap {
+    margin: 0 20px;
+  }
+}
+@media (max-width: 767px) {
+  .footer .row .form_wrap {
+    width: 80%;
+    margin-bottom: 70px;
+  }
+}
+@media (max-width: 500px) {
+  .footer .row .form_wrap {
+    width: 100%;
+  }
+}
 .footer .row .form_wrap .title {
   margin-bottom: 20px;
   font-size: 24px;
   color: #0E2F3E;
   font-weight: 500;
 }
+@media (max-width: 767px) {
+  .footer .row .form_wrap .title {
+    text-align: center;
+  }
+}
 .footer .row .form_wrap .row_wrap {
   display: flex;
   margin: 0 -7px;
 }
+@media (max-width: 1024px) {
+  .footer .row .form_wrap .row_wrap {
+    flex-direction: column;
+    margin: 0;
+  }
+}
+@media (hover: none) and (pointer: coarse) {
+  .footer .row .form_wrap .row_wrap {
+    flex-direction: column;
+    margin: 0;
+  }
+}
 .footer .row .form_wrap .row_wrap input {
-  width: calc(100% - 14px);
+  width: calc(50% - 14px);
   margin: 0 7px;
+}
+@media (max-width: 1024px) {
+  .footer .row .form_wrap .row_wrap input {
+    margin: 0 0 24px;
+    width: 100%;
+  }
+  .footer .row .form_wrap .row_wrap input:last-of-type {
+    margin-bottom: 0;
+  }
+}
+@media (hover: none) and (pointer: coarse) {
+  .footer .row .form_wrap .row_wrap input {
+    margin: 0 0 24px;
+    width: 100%;
+  }
+  .footer .row .form_wrap .row_wrap input:last-of-type {
+    margin-bottom: 0;
+  }
+}
+.footer .row .form_wrap .row_wrap .button {
+  padding: 21px 10px;
 }
 .footer .row .info_wrap .link {
   display: inline-block;

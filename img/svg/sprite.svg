@@ -36,11 +36,11 @@
      </symbol>
 </svg>
         <!--
-<svg class="icon"><use xlink:href="/img/svg/sprite.svg#id_svg"></use></svg>
+<svg class="icon"><use xlink:href="img/svg/sprite.svg#id_svg"></use></svg>
 
 
 url(https://source.unsplash.com/600x600?summer);
 
 svg.icon
-    use(xlink:href="/img/svg/sprite.svg#link")
+    use(xlink:href="img/svg/sprite.svg#link")
     -->

@@ -21,6 +21,9 @@
         height: 520px;
         border-radius: 50%;
         background-color: #4fc9ff;
+        @include breakpoint(md-down){
+
+        }
       }
     }
     .info_wrap{
