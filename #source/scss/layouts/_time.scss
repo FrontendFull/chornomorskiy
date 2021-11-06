@@ -24,7 +24,7 @@
       .item{
         display: flex;
         flex-direction: column;
-        max-width: 170px;
+        max-width: 185px;
         width: max-content ;
         max-height: 130px;
         position: absolute;
@@ -33,13 +33,14 @@
         font-weight: 500;
         font-size: 18px;
         line-height: 130%;
+        z-index: -1;
         .time{
           margin-top: 5px;
           color: $text-color;
         }
         @for $i from 1 through 12 {
           &.item-#{$i} {
-            transform: translateX(-50%) rotate(calc(#{$i} * -30deg + 30deg));
+           transform: translateX(-50%) rotate(calc(#{$i} * -30deg + 30deg));
             @if $i >= 2 and  $i < 7  {
               text-align: left;
             }
@@ -57,6 +58,7 @@
       }
       @for $i from 1 through 12 {
         &.time_wrap-#{$i} {
+          z-index:  1;
           transform: translateX(-50%) rotate(calc(#{$i} * 30deg - 30deg));
         }
       }

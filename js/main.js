@@ -90,6 +90,19 @@ window.onload = function () {
         }
     });
 
+    for (const item of document.querySelectorAll('.tabs .button')) {
+       item.addEventListener('click',function (){
+           for (const i of document.querySelectorAll('.tabs .button')){
+               i.classList.remove('on');
+               i.closest('.section').classList.remove(`${i.classList[0]}`);
+           }
+           this.classList.add('on');
+           item.closest('.section').classList.add(`${item.classList[0]}`);
+           document.querySelector(`.section_video .video_btn.on`).classList.remove('on');
+           document.querySelector(`.section_video  .${item.classList[0]}.video_btn`).classList.add('on');
+       })
+    }
+
     MenuScrollAnchors('.anchor', '.menu_link')
 
 }

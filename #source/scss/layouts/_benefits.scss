@@ -18,6 +18,8 @@
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
+      pointer-events: none;
+      z-index: -1;
     }
     .item{
       position: absolute;
@@ -143,3 +145,4 @@
     }
   }
 }
+

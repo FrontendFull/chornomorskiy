@@ -89,7 +89,7 @@ a {
 }
 .section {
   position: relative;
-  margin-top: 118px;
+  //margin-top: 118px;
   .anchor {
     position: absolute;
     pointer-events: none;
@@ -100,16 +100,76 @@ a {
 
 .color_1{
   color: $color_1;
+  border-color: $color_1;
+  fill: $color_1;
 }
 
 .color_2{
   color: $color_3;
+  border-color: $color_3;
+  fill: $color_3;
 }
 
 .color_3{
   color: $color_4;
+  border-color: $color_4;
+  fill: $color_4;
 }
 
 .color_4{
   color: $color_6;
+  border-color: $color_6;
+  fill: $color_6;
+}
+
+.iconInfo{
+  cursor: pointer;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-left: 5px;
+  transform: translateY(10%);
+  .icon{
+    width: inherit;
+    height: inherit;
+    fill: inherit;
+  }
+  .blockInfo{
+    opacity: 0;
+    pointer-events: none;
+    text-align: left  ;
+    z-index: 50;
+    background-color: #ffffff ;
+    position: absolute;
+    font-size: 12px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 2px rgba(34,34,34,0.3);
+    width: 180px;
+    transition: 0.4s;
+    line-height: 1.2;
+  }
+  &:hover{
+    .blockInfo{
+     &.TL{
+       top: 15px;
+       left: 15px;
+     }
+     &.TR{
+       top: 15px;
+       right: 15px;
+     }
+     &.BL{
+       bottom: 15px;
+       left: 15px;
+     }
+     &.BR{
+       bottom: 15px;
+       right: 15px;
+     }
+
+      opacity: 1;
+      pointer-events: initial;
+    }
+  }
 }
