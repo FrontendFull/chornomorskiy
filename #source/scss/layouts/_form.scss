@@ -9,54 +9,89 @@
 
   .title {
     text-align: left;
+    @include breakpoint(xs){
+      text-align: center;
+    }
   }
-
+  .subtitle{
+    @include breakpoint(xs){
+      text-align: center;
+    }
+  }
   .row {
     display: flex;
+   @include breakpoint(sm-down){
+     flex-direction: column;
+   }
 
     .form_inner {
       width: 60%;
+      @include breakpoint(sm-down){
+        width: 100%;
+      }
 
       .subtitle {
         margin-bottom: 30px;
       }
 
       .form {
+        @include breakpoint(sm-down){
+          text-align: center;
+        }
         .inputs_wrap {
           display: flex;
           align-items: center;
           margin: 0 -10px;
+          @include breakpoint(xs){
+            flex-direction: column;
+            margin: 0;
+          }
 
           input {
             margin: 0 10px;
+            @include breakpoint(xs){
+              margin: 0 0 20px;
+            }
           }
         }
+
 
         .check {
           display: flex;
           margin-top: 50px;
           color: #7C919B;
           margin-bottom: 20px;
+          @include breakpoint(sm-down){
+            text-align: left;
+            margin: 30px auto;
+            max-width: max-content;
+          }
 
           a {
             color: inherit;
             margin-top: 5px;
             display: inline-block;
-
+            transition: 0.4s;
             &:hover {
-
+                color: $color_1;
             }
           }
         }
 
         .button {
           max-width: 350px;
+          @include breakpoint(xs){
+            max-width: 270px;
+          }
         }
       }
     }
 
     .timer_inner {
       width: 40%;
+      @include breakpoint(sm-down){
+        width: 100%;
+      }
       padding: 30px;
       display: flex;
       align-items: center;
@@ -78,12 +113,18 @@
             font-size: 58px;
             font-weight: 500;
             color: $color_1;
+            @include breakpoint(xs){
+              font-size: 48px;
+            }
           }
 
           .text {
             font-size: 18px;
             line-height: 140.5%;
             color: #7C919B;
+            @include breakpoint(xs){
+              font-size: 16px;
+            }
           }
 
           & + .column {

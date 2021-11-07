@@ -32,9 +32,16 @@
   .row{
     width: 100%;
     display: flex;
+    @include breakpoint(xs){
+      flex-direction: column;
+    }
   }
   .text_block{
-    max-width: 60%;
+    width: 60%;
+    @include breakpoint(xs){
+      width: 100%;
+      margin-bottom: 30px;
+    }
     .title{
       text-align: left;
       color: $color_4;
@@ -43,6 +50,9 @@
     .text{
       font-size: 24px;
       margin-bottom: 30px;
+      @include breakpoint(xs){
+        font-size: 18px;
+      }
     }
     .button{
       background-color: $color_4;
@@ -53,6 +63,9 @@
     align-items: center;
     justify-content: center;
     width: 40%;
+    @include breakpoint(xs){
+      width: 100%;
+    }
     .video_btn {
       width: 100px;
       height: 100px;

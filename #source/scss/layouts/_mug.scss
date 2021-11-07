@@ -46,6 +46,10 @@
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center;
+      z-index: 0;
+      &:hover{
+        z-index: 3;
+      }
       .iconInfo{
         position: absolute;
         top: 30%;

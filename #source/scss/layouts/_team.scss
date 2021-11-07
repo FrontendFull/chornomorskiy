@@ -3,6 +3,7 @@
   padding-bottom: 165px;
   margin-bottom: 75px;
   background-image: url("../img/svg/team.svg");
+
   background-position: 50% 0;
   background-repeat: no-repeat;
   background-size: cover;
@@ -15,6 +16,9 @@
     position: relative;
 
     background-image: url("../img/teams.png");
+    @include breakpoint(xs){
+      background-image: url("../img/teams-mob.png");
+    }
     height: 320px;
     background-position: top center;
     background-size: contain;
@@ -26,6 +30,20 @@
       margin: 0 100px;
       bottom: 40px;
       left: 0;
+      @include breakpoint(md-down){
+        max-width: 645px;
+        bottom: 70px;
+      }
+      @include breakpoint(md-down){
+        max-width: 510px;
+        bottom: 120px;
+      }
+      @include breakpoint(xs){
+        position: static;
+        max-width: initial;
+        bottom: initial;
+        margin: 0;
+      }
 
       .slider {
         height: initial;
@@ -39,6 +57,10 @@
           background-size: contain;
           background-position: center;
           height: 105px;
+          @include breakpoint(xs){
+            background-image: none;
+            height: initial;
+          }
 
           img {
             display: block;
@@ -60,6 +82,12 @@
     border-radius:50%;
     top: initial;
     bottom: 80px;
+    @include breakpoint(md-down){
+      bottom: 100px;
+    }
+    @include breakpoint(md-down){
+      bottom: 160px;
+    }
     &:hover{
       &:after{
         border-color: #ffffff;
@@ -90,6 +118,12 @@
 
   .swiper-button-next {
     left: calc(780px + 25px + 100px);
+    @include breakpoint(md-down){
+      left: calc(645px + 25px + 100px);
+    }
+    @include breakpoint(sm-down){
+      left: calc(510px + 25px + 100px);
+    }
     right: initial;
     &:after{
       border-top: 2px solid #000000;

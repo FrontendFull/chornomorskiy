@@ -5,6 +5,19 @@
   .wrap {
     height: 850px;
     position: relative;
+    @media (max-width: 1300px) {
+      max-width: 75%;
+      margin: 0 auto;
+    }
+    @include breakpoint(sm-down){
+      height: 580px;
+    }
+    @media (max-width: 750px) {
+      height: 550px;
+    }@media (max-width: 700px) {
+      height: 500px;
+    }
+
     &:after {
       content: '';
       position: absolute;
@@ -19,11 +32,27 @@
       background-repeat: no-repeat;
       background-size: contain;
       pointer-events: none;
-      z-index: -1;
+      z-index: 0;
     }
     .item{
+      z-index: 0;
+      &:hover{
+        z-index: 3;
+      }
       position: absolute;
       width: 325px;
+      @media (max-width: 1300px) {
+        width: 300px!important;
+      }
+      @include breakpoint(sm-down){
+        width: 220px !important;
+      }
+      @media(max-width: 760px) {
+        width: 150px !important;
+      }
+      @media (max-width: 500px) {
+        width: 100px!important;
+      }
       &:after{
         position: absolute;
         bottom: -10px;
@@ -40,6 +69,15 @@
         font-weight: 500;
         font-size: 21px;
         color: #0E2F3E;
+        @media (max-width: 1300px) {
+          font-size: 18px;
+        }
+        @include breakpoint(sm-down){
+          font-size: 14px;
+        }
+        @include breakpoint(xs){
+          font-size: 12px;
+        }
       }
     }
 
@@ -114,6 +152,9 @@
       top: 50%;
       left: 70%;
       text-align: right;
+      @media(max-width: 760px) {
+        left: 48%;
+      }
       &:after{
         background-image: url("../img/svg/benefits_10.svg");
       }
