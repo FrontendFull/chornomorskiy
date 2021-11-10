@@ -1,5 +1,5 @@
 .section_video {
-  margin-top: -100px;
+  margin-top: -50px;
   padding-top: 115px;
   padding-bottom: 115px;
   margin-bottom: 75px;
@@ -55,9 +55,6 @@
         max-width: 170px;
       }
       padding: 21px 40px;
-      &.on{
-        background-color: #DD137B;
-      }
     }
   }
   .banner_mask {
@@ -78,12 +75,10 @@
     &.on{
       display: inline-block;
     }
-    &.btn-1{background-color: #DD137B}
-    &.btn-2{background-color: #0c9748}
-    &.btn-3{background-color: #4fc9ff}
+
+    background-color: $color_1;
     width: 100px;
     height: 100px;
-    background-color: $color_5;
     border-radius: 50%;
     position: relative;
     cursor: pointer;

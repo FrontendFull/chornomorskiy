@@ -6,8 +6,12 @@
   min-height: 80vh;
   align-items: center;
   width: 100%;
-  -webkit-clip-path: url(#banner-clip-path);
-  clip-path: url(#banner-clip-path);
+  -webkit-clip-path: url(#mask1);
+  clip-path: url(#mask1);
+  @include breakpoint(sm-down){
+    -webkit-clip-path: url(#mask2);
+    clip-path: url(#mask2);
+  }
   position: relative;
   &:after{
     content: '';
@@ -56,6 +60,7 @@
     }
     .button{
       background-color: $color_4;
+
     }
   }
   .video-btn_wrap {
@@ -76,6 +81,19 @@
       transition: 0.4s;
       &:hover{
         background-color: $color_1;
+      }
+      &:before{
+        content: '';
+        position: absolute;
+        z-index: 1;
+        top: -36px;
+        right: calc(100% + 36px);
+        width: 80px;
+        height: 80px;
+        background-image: url("../img/svg/btn-deco.svg");
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
       }
       &:after{
         position: absolute;

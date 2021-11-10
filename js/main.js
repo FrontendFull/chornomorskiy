@@ -28,6 +28,8 @@ window.onload = function () {
         }
     });
 
+
+
     document.querySelector('.close_menu').addEventListener('click', function () {
         this.closest('.menu_list').classList.remove('active');
         document.querySelector('body').style.overflow = 'initial';
@@ -125,7 +127,18 @@ window.onload = function () {
         })
     }
 
-    //MenuScrollAnchors('.anchor', '.menu_link')
+    window.addEventListener('resize',function (){
+        if (window.innerWidth < 767){
+            var ship = new Swiper(".shipSwiper", {
+                slidesPerView: 1,
+                speed: 1000,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        }
+    })
 
 }
 // window.addEventListener('scroll', function () {
